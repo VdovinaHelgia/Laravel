@@ -1,0 +1,103 @@
+body {
+    font-family: "Philosopher", serif;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 1%;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 35px;
+    color: #BC781C;
+
+    margin-top: 20px;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 2px solid #BC781C;
+    border-radius: 50px;
+}
+
+.input {
+    text-decoration: none;
+    width:250px;
+    font-family: "Philosopher", serif;
+    font-size: 20px;
+    text-align: center;
+    color: #BC781C;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 3px solid #BC781C;
+    border-radius: 15px;
+}
+input:focus{
+    outline: none;
+}
+.input::placeholder {
+    color: #BC781C;
+  }
+.error {
+    color: #E04545;
+    width: 450px;
+    height: 35px;
+    background-color: #161617;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.reg {
+    text-decoration: none;
+    font-size: 20px;
+    color: #BC781C;
+    font-family: "Philosopher", serif;
+    background-color: #ffffff;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 2px solid #BC781C;
+    border-radius: 50px;
+}
+
+.regOk {
+    color: #BC781C;
+    font-size: 26px;
+    margin-top: 2%;
+}
+
+.buttonOk {
+    text-decoration: none;
+    font-size: 20px;
+    color: #61A81B;
+
+    margin-top: 2%;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 2px solid #61A81B;
+    border-radius: 50px;
+}

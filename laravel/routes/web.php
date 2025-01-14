@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
+
+
+Route::get('/', [MainController::class, 'main'])->name('main');
+
+Route::get('/registration', [MainController::class, 'registration'])->name('registration');
+Route::get('/registration-ok', [MainController::class, 'registrationOk'])->name('registration-ok');
+
+Route::get('/authentication', [MainController::class, 'authentication'])->name('authentication');

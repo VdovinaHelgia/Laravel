@@ -15,7 +15,7 @@
     <img class = "grid-item logo" src = "{{ asset('img/logo.jpg') }}">
         <img class = "grid-item" src = "{{ asset('img/logo-text.svg') }}">
 
-        <form class = "grid-item" method = "post" action = "">
+        <form class = "grid-item" method = "post" action = "/authentication/check">
                 @csrf
                 <p><input type="text" name="login" placeholder="Логин" size="12" class = "input"/></p>
                 <p><input type="password" name="password" placeholder="Пароль" size="12" maxlength="11" class = "input"/></p>

@@ -21,6 +21,8 @@ use App\Http\Controllers\MainController;
 Route::get('/', [MainController::class, 'main'])->name('main');
 
 Route::get('/registration', [MainController::class, 'registration'])->name('registration');
+Route::post('/registration/check', [MainController::class, 'registration_check'])->middleware('guest');
 Route::get('/registration-ok', [MainController::class, 'registrationOk'])->name('registration-ok');
 
 Route::get('/authentication', [MainController::class, 'authentication'])->name('authentication');
+Route::post('/authentication/check', [MainController::class, 'authentication_check']);

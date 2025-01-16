@@ -1,0 +1,187 @@
+body {
+    font-family: "Philosopher", serif;
+} 
+
+.grid-container {
+    display: grid;
+    position: relative;
+}
+
+.grid-item {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.post_img{
+    width: 700px;
+    height: 500px;
+    /* border: 2px solid white;  */
+}
+
+.post_title{
+    /* border: 2px solid white;  */
+    width: 700px;
+    height: fit-content;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    color: #C9CCCF;
+    text-align: left;
+}
+
+.post_body{
+    /* border: 2px solid white;  */
+    width: 700px;
+    height: fit-content;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 500;
+    color: #C9CCCF;
+    text-align: justify;
+}
+
+.comment_title{
+    color: #C9CCCF;
+    width: 700px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.comment{
+    background-color: #26282B;
+    color: #ffffff;
+    width: 700px;
+    height: fit-content;
+    border-radius: 20px;
+
+    margin-top: 40px;
+}
+
+.grid-header_comment{
+    padding-top: 10px;
+    height: 80px;
+    display: flex;                
+    align-items: center; 
+}
+
+.grid-main_comment{
+    display: flex;  
+}
+
+.time{
+    color: #C9CCCF;
+    font-family: 'Raleway';
+    padding-left: 2%;
+    height: 80px;
+    width: 150px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.avatar {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    margin-left: 20px;
+}
+
+.username {
+    width: 450px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    color: #C9CCCF;
+    text-align: left;
+}
+
+.body{
+    /* border: 2px solid white;  */
+    padding: 2%;
+    width: 700px;
+    height: fit-content;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+textarea{
+    color: #C9CCCF;
+    width: 690px;
+    height: 50px;
+    background-color: #26282B;
+
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 100;
+    text-align: justify;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    resize: none;
+
+    overflow: hidden; /* Скрыть стандартные полосы прокрутки */
+}
+
+.create_comment{
+    display: flex;
+}
+
+.textarea-container {
+    flex-grow: 1; 
+    text-align: center; 
+    margin-left: 60px;
+}
+
+.in_post{
+    width: 50px; 
+    height: 50px; 
+    background-color: #616D85;;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+.in_post_icon{
+    width: 30px; 
+    height: 30px;
+}
+
+.all_post{
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #616D85;;
+    border-radius: 50px;
+    border: none;
+    top: 10px; 
+    left: 10px;
+
+    display: flex;            
+    justify-content: center;   
+    align-items: center;
+}
+
+
+.all_post_icon{
+    width: 30px; 
+    height: 30px;
+}

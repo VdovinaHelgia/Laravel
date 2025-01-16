@@ -1,0 +1,19 @@
+body {
+    font-family: "Philosopher", serif;
+    display: table-cell;
+    vertical-align: middle;
+} 
+.top-menu {
+    background-color: #26282B;
+    height: 125px;
+    width: 100vw;
+}
+
+.logo {
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: left;
+    margin: 0%;
+}

@@ -1,13 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< Updated upstream
-
-=======
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AccountController;
->>>>>>> Stashed changes
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +14,8 @@ use App\Http\Controllers\AccountController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
-
 Route::get('/', function () {
     return view('welcome');
-<<<<<<< Updated upstream
-});
-=======
 }); */
 
 
@@ -63,4 +55,3 @@ Route::post('/comment_check', [PostController::class, 'commentCheck'])->name('co
 
 // Route::get('/posts/my', [PostController::class, 'myPosts'])->name('posts.my');
 
->>>>>>> Stashed changes

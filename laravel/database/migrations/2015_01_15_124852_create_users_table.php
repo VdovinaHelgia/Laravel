@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('username');
             $table->string('email');
             $table->integer('role_id');
-            $table->string('avatar')->default('no');
             $table->timestamps();
         });
     }

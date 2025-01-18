@@ -68,7 +68,7 @@ textarea{
     height: 500px;
     background-color: #ffffff;
 
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 24px;
     font-weight: 100;
     text-align: justify;
@@ -89,7 +89,7 @@ textarea{
     height: 35px;
     background-color: #161617;
 
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 24px;
     font-weight: 400;
 }
@@ -112,7 +112,7 @@ textarea{
     height: 45px;
     border-radius: 20px;
 
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 18px;
     font-weight: 300;
     color: #C9CCCF;
@@ -140,7 +140,7 @@ textarea{
     height: 45px;
     border-radius: 20px;
 
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 18px;
     font-weight: 300;
     color: #C9CCCF;
@@ -163,7 +163,7 @@ textarea{
 }
 
 #fileName{
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 18px;
     font-weight: 300;
     color: #C9CCCF;

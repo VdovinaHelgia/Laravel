@@ -6,7 +6,7 @@ use App\Models\PostsModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use App\Models\CommentModel;
+use App\Models\CommentsModel;
 use Illuminate\Support\Facades\Log;
 
 class PostController extends Controller
@@ -33,7 +33,7 @@ class PostController extends Controller
 
         $request->validate([
             'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'user_id' => 'required|exists:users_models,id',
+            'user_id' => 'required|exists:users,id',
         ]);
     
         // Создаем новую запись в таблице posts_models
@@ -58,7 +58,7 @@ class PostController extends Controller
         $post = PostsModel::findOrFail($id);
 
         // Получаем комментарии к этому посту
-        $comments = CommentModel::with('user')->where('post_id', $id)->get();
+        $comments = CommentsModel::with('user')->where('post_id', $id)->get();
 
         // Возвращаем представление с постом и комментариями
         return view('main_post_page', compact('post', 'comments'));
@@ -74,7 +74,7 @@ class PostController extends Controller
             ]);
 
             // Создаем новый комментарий
-            CommentModel::create([
+            CommentsModel::create([
                 'user_id' => Auth::id(), // Получаем ID авторизованного пользователя
                 'post_id' => $request->post_id, 
                 'body' => $request->body,

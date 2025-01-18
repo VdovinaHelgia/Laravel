@@ -13,12 +13,12 @@
   
     <form method = "get" action = "posts">
         <button class="all_post">
-            <img src="{{ asset('images/left_arrow.svg') }}" alt="all post" class="all_post_icon">
+            <img src="{{ asset('img/left_arrow.svg') }}" alt="all post" class="all_post_icon">
         </button>
     </form>
 
     <div class="grid-item">
-      <img src="{{ Auth::user()->avatar !== 'no' ? asset('storage/' . Auth::user()->avatar) : asset('images/avatar.svg') }}" alt="avatar" class="avatar">
+      <img src="{{ Auth::user()->avatar !== 'no' ? asset('storage/app/public/avatar' . Auth::user()->avatar) : asset('img/avatar.svg') }}" alt="avatar" class="avatar">
       <p class="username">{{ $user->username }}</p> <!-- Отображаем реальное имя пользователя -->
       <input type="file" id="avatarInput" accept="image/*" style="display: none;" />
     </div>
@@ -26,17 +26,17 @@
     <div class="form_upd">
       <div class="grid-menu grid-item">
           <button class="posts" onclick="window.location.href='{{ route('posts', ['filter_by_user' => 'true']) }}'">
-            <img src="{{ asset('images/posts.svg') }}" alt="posts" class="button_icon">
+            <img src="{{ asset('img/posts.svg') }}" alt="posts" class="button_icon">
           </button>
           <button class="settings">
-              <img src="{{ asset('images/settings.svg') }}" alt="settings" class="button_icon">
+              <img src="{{ asset('img/settings.svg') }}" alt="settings" class="button_icon">
           </button>
           
          
           <form action="{{ route('logout') }}" method="POST" style="display: inline;">
               @csrf
               <button type="submit" class="logout">
-                <img src="{{ asset('images/logout.svg') }}" alt="logout" class="button_icon logout_icon">
+                <img src="{{ asset('img/logout.svg') }}" alt="logout" class="button_icon logout_icon">
               </button>
           </form>
       </div>
@@ -45,7 +45,7 @@
         @csrf 
         <button type="button" id="uploadButton">
             Изменить фото
-            <img src="{{ asset('images/add_avatar.svg') }}" alt="add avatar" class="button_add">
+            <img src="{{ asset('img/add_avatar.svg') }}" alt="add avatar" class="button_add">
         </button>
 
         <p class="login title"> Логин </p>

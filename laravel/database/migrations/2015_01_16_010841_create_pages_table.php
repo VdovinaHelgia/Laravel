@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use TCG\Voyager\Models\Page;
 return new class extends Migration
 {
     /**
@@ -19,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('body')->nullable();
             $table->string('image');
-            $table->enum('status', Page::$statuses)->default(Page::STATUS_INACTIVE);
+            $table->boolean(0)->default(0);
             $table->timestamps();
         });
     }

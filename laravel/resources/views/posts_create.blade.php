@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Posts</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/posts-create.css') }}"/>
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style =" background-image: url('{{ asset('img/background.jpg') }}');">
     <div class = "grid-container">
@@ -15,11 +16,11 @@
             @csrf
             <p class="bt-center">
                 <button type="submit" class="dark-button">
-                    <img src="{{ asset('images/save_post.svg') }}" alt="save" class="button-icon"> 
+                    <img src="{{ asset('img/save_post.svg') }}" alt="save" class="button-icon"> 
                 </button>
 
                 <button type="button" id="save_img" class="dark-button">
-                    <img src="{{ asset('images/save_image_for_post.svg') }}" alt="save img" class="button-icon"> 
+                    <img src="{{ asset('img/save_image_for_post.svg') }}" alt="save img" class="button-icon"> 
                 </button>
             </p>
             <p id="fileName"></p>
@@ -31,7 +32,7 @@
 
         <form method = "get" action = "posts">
             <button class="all_post">
-                <img src="{{ asset('images/left_arrow.svg') }}" alt="all post" class="all_post_icon">
+                <img src="{{ asset('img/left_arrow.svg') }}" alt="all post" class="all_post_icon">
             </button>
         </form>
 
@@ -40,7 +41,7 @@
         @if(session('success')) 
             <div id="success-message" style="color: aliceblue" class="alert alert-success">
                 Пост успешно создан!
-                <img src="{{ asset('images/post_saved.svg') }}" alt="post_saved" class="button-icon-saved"> 
+                <img src="{{ asset('img/post_saved.svg') }}" alt="post_saved" class="button-icon-saved"> 
             </div>
         @endif
 

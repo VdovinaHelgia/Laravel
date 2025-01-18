@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('image');
-            $table->unsignedBigInteger(column:'likes');
+            //$table->unsignedBigInteger(column:'likes');
             $table->enum('status', ['PUBLISHED', 'DRAFT', 'PENDING'])->default('DRAFT');
             $table->boolean('featured')->default(0);
             $table->timestamps();

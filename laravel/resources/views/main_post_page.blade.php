@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Post</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/page_post.css') }}"/>
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style =" background-image: url('{{ asset('img/background.jpg') }}');">
     <div class = "grid-container">
-
-    
-        
         <a href="{{ route('posts') }}" class="all_post">
-            <img src="{{ asset('images/left_arrow.svg') }}" alt="all post" class="all_post_icon">
+            <img src="{{ asset('img/left_arrow.svg') }}" alt="all post" class="all_post_icon">
         </a>
 
         <div class = "grid-item">
@@ -55,7 +53,7 @@
                 <textarea name="body" rows="3" cols="50" placeholder="Напишите комментарий ..."></textarea>
             </div>
             <button class="in_post">
-                <img src="{{ asset('images/right_arrow.svg') }}" alt="in post" class="in_post_icon">
+                <img src="{{ asset('img/right_arrow.svg') }}" alt="in post" class="in_post_icon">
             </button>
         </form>
 

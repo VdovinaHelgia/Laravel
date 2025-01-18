@@ -1,0 +1,157 @@
+#gallery{
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    top: 373px;
+    left: 67%;
+    max-width: 200px;
+}
+#gallery2{
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    padding: 0 3rem;
+    box-sizing: border-box;
+    top: 480px;
+    left: 20%;
+    max-width: 200px;
+}
+.gallery-draggable{
+    cursor: grabbing;
+}
+
+.gallery-line {
+    overflow: hidden;
+    cursor: grabbing;
+}
+
+.gallery-slide {
+    min-height: 1px;
+    float: left;
+    transform: translateZ(0);
+    overflow: hidden;
+}
+
+.gallery-dots{
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #cccc;
+    margin: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+    padding: 0;
+
+}
+.gallery-dot:hover,
+.gallery-dots-active{
+    background: #888;
+}
+
+.gallery-nav{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0;
+}
+
+.gallery-nav-left,
+.gallery-nav-right{
+    position:absolute;
+    width: 2rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    text-indent: -1234rem;
+    top: 60%;
+    margin-top: -4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.gallery-nav-left{
+    background: url('./images/left.svg') no-repeat center;
+    background-size: contain;
+    left: 0;
+}
+.gallery-nav-right{
+    right: 0;
+    background: url('./images/right.svg') no-repeat center;
+    background-size: contain;
+}
+
+#animation1.active {
+    animation: animation 2s forwards;
+    animation-play-state: paused;
+}
+#animation2.active {
+    animation: animation 2s forwards;
+    animation-play-state: paused;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #gallery2{
+        left: 14%;
+    }
+
+    @media screen and (max-width: 650px) {
+        #gallery2{
+            left: 10%;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        #gallery2{
+            left: 10%;
+        }
+        #gallery{
+            left: 55%;
+        }
+        .gallery-nav-left{
+            display: none;
+        }
+        .gallery-nav-right{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        #gallery2{
+            left: 0;
+        }
+        #gallery{
+            left: 50%;
+        }
+        .gallery-nav-left{
+            display: none;
+        }
+        .gallery-nav-right{
+            display: none;
+        }
+    }
+
+}

@@ -84,7 +84,7 @@ class AccountController extends Controller
 
     public function logout() {
         Auth::logout();
-        return redirect()->route('entry');
+        return redirect()->route('main');
     }
 
 }

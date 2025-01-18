@@ -23,7 +23,7 @@ body {
     /* border: 2px solid white;  */
     width: 700px;
     height: fit-content;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 20px;
     font-weight: 700;
     color: #C9CCCF;
@@ -34,7 +34,7 @@ body {
     /* border: 2px solid white;  */
     width: 700px;
     height: fit-content;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 20px;
     font-weight: 500;
     color: #C9CCCF;
@@ -44,7 +44,7 @@ body {
 .comment_title{
     color: #C9CCCF;
     width: 700px;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 20px;
     font-weight: 700;
     text-align: left;
@@ -74,7 +74,7 @@ body {
 
 .time{
     color: #C9CCCF;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     padding-left: 2%;
     height: 80px;
     width: 150px;
@@ -96,7 +96,7 @@ body {
 
 .username {
     width: 450px;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 20px;
     font-weight: 700;
     color: #C9CCCF;
@@ -111,7 +111,7 @@ body {
     text-align: left;
     margin-top: 0;
     margin-bottom: 20px;
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 15px;
     font-weight: 500;
 
@@ -123,7 +123,7 @@ textarea{
     height: 50px;
     background-color: #26282B;
 
-    font-family: 'Raleway';
+    font-family: "Philosopher", serif;
     font-size: 24px;
     font-weight: 100;
     text-align: justify;

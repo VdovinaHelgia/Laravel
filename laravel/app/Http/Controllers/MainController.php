@@ -19,7 +19,7 @@ class MainController extends Controller
         $userId = auth()->id(); 
         $user = Users::find($userId); // Получаем данные пользователя по его ID
 
-        return view('posts-create', compact('user'));
+        return view('posts_create', compact('user'));
     }
     public function posts_create_check(Request $request)
     {
@@ -107,6 +107,6 @@ class MainController extends Controller
             ]);
         }
 
-        return redirect()->route('registration-ok'); //заглушка
+        return redirect()->route('posts'); //заглушка
     }
 }

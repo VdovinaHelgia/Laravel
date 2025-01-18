@@ -10,6 +10,7 @@ body {
     text-align: center;
     width: fit-content;
     margin: auto;
+    
 }
 
 .avatar{
@@ -21,7 +22,7 @@ body {
 
 .username{
     font-family: "Philosopher", serif;
-    color: #C9CCCF;
+    color: #61A81B;
     font-size: 34;
     font-weight: 400;
 
@@ -65,7 +66,8 @@ body {
     width: 600px;
     height: 550px;
 
-    border-radius: 20px;
+    border: 2px solid #BC781C;
+    border-radius: 50px;
 
     margin-left: 0;
 
@@ -197,7 +199,7 @@ body {
     position: absolute; 
     width: 50px; 
     height: 50px; 
-    background-color: #BC781C;;
+    background-color: #61A81B;;
     border-radius: 50px;
     border: none;
     top: 50px; 
